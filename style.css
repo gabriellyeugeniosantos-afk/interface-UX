@@ -40,7 +40,7 @@ body{
 
 .botao-controle{
     background: white;
-    color: #333;;
+    color: #333;
     border: 2px solid var(--secundaria);
     padding: 10px 15px;
     font-weight: bold;
@@ -196,6 +196,9 @@ border: 2px dashed var(--primaria);
     width: 100%;
     padding: 15px;
  }
+}
+
+html{ scroll-behavior: smooth;
 }
 
 html{ scroll-behavior: smooth;
