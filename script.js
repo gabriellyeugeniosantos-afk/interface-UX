@@ -53,11 +53,19 @@ function lerEmVozAlta(){
         }
     }
     return;
-}
+
 
 let conteudo = document.querySelector("main");
 let texto = conteudo.innerText;
 
 let fala = new SpeechSynthesisUtterance(texto);
 fala.lang = "pt-BR";
-fala.onend = finalizarLeitura
+fala.onend = finalizarLeitura;
+lendo = true;
+speechSynthesis.cancel();
+speechSynthesi.speack();
+}
+
+function finalizarLeitura(){
+    lendo = false;
+}
